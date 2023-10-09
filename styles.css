@@ -6,7 +6,8 @@
 
 body {
   background-color: rgb(137, 182, 154);
-  font-family: "Helvetica", sans-serif;
+  font-family: "Bellota Text", sans-serif;
+  font-size: large;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -16,11 +17,8 @@ h1 > a {font-size: medium;}
 
 p {padding-left: 20px;}
 
-.title {
+dt, .title {
   font-weight: bold;
   font-style: italic;
+  padding-left: 20px;
 }
-
-.indent2 {padding-left: 40px;}
-
-.indentlist {padding-left: 80px;}
