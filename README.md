@@ -42,8 +42,6 @@ If you choose to use a second stylesheet, you should use `styles.css` only for s
   * Do not express style information in the HTML, such as through inline styles or presentational HTML tags such as `b`, `i` or `font`.
   * Prefer CSS selectors instead of using too many classes or IDs in your HTML.
   * Do not include unused, duplicate, or overridden CSS rules or rulesets and use shared CSS selectors to factor out redundancy. Make sure to double-check that you didn't leave any unused styles in before submitting!
-* For full credit, all HTML and CSS files must be well-formed.
-* Note: You _may_ use a framework such as Bootstrap to help with your styling and helpful responsive layout features, however you must still meet all of the above requirements and demonstrate that you understand the key concepts of how the HTML and CSS work. Any framework code _will not count_ towards HTML/CSS requirements (e.g. if you use the Bootstrap "container" class in your HTML, you cannot count the CSS implementation in the bootstrap.css file towards the CSS requirements), however you can add new (not duplicate) CSS for this class to `styles.css`. You are not allowed to use any template HTML files for frameworks (this defeats the purpose of writing HTML and CSS from scratch in this first assignment).
   * Don't know what any of that means but want to learn how to use a CSS framework? Ask about them in office hours!
 
 # Creative Project 2 - upcoming
