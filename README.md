@@ -1,4 +1,4 @@
-This repository is my portfolio of projects from the Web Development course of the Bachelor of Science in Computer Science program, Fall Quarter '23. See below for phase details and specifications.
+This repository is my portfolio of projects from the Web Development course of the Bachelor of Science in Computer Science program, Fall Quarter '23. See "Create Project #" headings below for phase requirements.
 
 Instructions for viewing the web pages:
   1. Download and extract the zip file for this repository.
@@ -9,13 +9,13 @@ Instructions for viewing the web pages:
 
 # Creative Project 1
 ## Overview
-For the first project, we were tasked to use HTML and CSS to make a simple website with at least two HTML pages linked to one shared CSS file. 
+For the first project, I was tasked to make a simple website with the HTML and CSS learned so far. The website was to have at least two HTML pages linked to one shared CSS file.
 
 1. 'about.html' was given to us as a template in which we filled in our own content but left the code largely untouched.
-2. 'resume.html' was my from-scratch addition.
-3. 'styles.css' was given as a minimal template for us to expand on. It originally only had an html ruleset with 5 elements in it.
+2. 'resume.html' is my from-scratch addition.
+3. 'styles.css' was given as a minimal template for us to expand on. It originally only had an html ruleset with 5 rules in it.
 
-See the requirements listed below for more info on project specifications.
+See the external & internal requirements listed below for more info on project specifications.
 
 ## External Requirements
 * Your project must include the following 3 files (you may choose to include more):
@@ -42,7 +42,6 @@ If you choose to use a second stylesheet, you should use `styles.css` only for s
   * Do not express style information in the HTML, such as through inline styles or presentational HTML tags such as `b`, `i` or `font`.
   * Prefer CSS selectors instead of using too many classes or IDs in your HTML.
   * Do not include unused, duplicate, or overridden CSS rules or rulesets and use shared CSS selectors to factor out redundancy. Make sure to double-check that you didn't leave any unused styles in before submitting!
-  * Don't know what any of that means but want to learn how to use a CSS framework? Ask about them in office hours!
 
 # Creative Project 2 - upcoming
 # Creative Project 3 - upcoming
