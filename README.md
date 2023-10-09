@@ -2,10 +2,8 @@ This repository is my portfolio of projects from the Web Development course of t
 
 Instructions for viewing the web pages:
   1. Download and extract the zip file for this repository.
-  2. In your file folder, copy the file path for the about.html file.
-  3. Open your preferred browser.
-  4. Type "file:///" into the address bar.
-  5. Paste the file path that was copied in step 2.
+  2. Navigate to any .html file in the folder and open.
+  3. File should open in your default browser app.
 
 # Creative Project 1
 ## Overview
