@@ -1,5 +1,12 @@
 This repository is my portfolio of projects from the Web Development course of the Bachelor of Science in Computer Science program, Fall Quarter '23. See project details for phase details and specifications.
 
+Instructions for viewing the web pages:
+  1. Download and extract the zip file for this repository.
+  2. In your file folder, copy the file path for the about.html file.
+  3. Open your preferred browser.
+  4. Type "file:///" into the address bar.
+  5. Paste the file path that was copied in step 2.
+
 # Creative Project 1
 ## Overview
 For the first project, we were tasked to use HTML and CSS to make a simple website with at least two HTML pages linked to one shared CSS file. 
