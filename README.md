@@ -1,4 +1,4 @@
-This repository is my portfolio of projects from the Web Development course of the Bachelor of Science in Computer Science program, Fall Quarter '23. See project details for project details and specifications.
+This repository is my portfolio of projects from the Web Development course of the Bachelor of Science in Computer Science program, Fall Quarter '23. See project details for phase details and specifications.
 
 # Creative Project 1
 ## Overview
