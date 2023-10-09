@@ -1,14 +1,9 @@
 /*
-  *** TODO: fill in your header ***
-  INSERT YOUR NAME HERE
-  INSERT THE CURRENT DATE HERE
-
-  WRITE A 2-3 SENTENCE FILE DESCRIPTION HERE
+  Name: Cheryl Moser
+  Date: October 18, 2023
+  CSS style document for the AD320 portfolio. Used by all pages for consistency.
 */
 
-/*
-  Note: This body rule set is to get you started
-*/
 body {
   background-color: rgb(137, 182, 154);
   font-family: "Helvetica", sans-serif;
@@ -16,3 +11,16 @@ body {
   margin-right: auto;
   width: 80%;
 }
+
+h1 > a {font-size: medium;}
+
+p {padding-left: 20px;}
+
+.title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.indent2 {padding-left: 40px;}
+
+.indentlist {padding-left: 80px;}
