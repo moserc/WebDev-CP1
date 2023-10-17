@@ -16,20 +16,22 @@
   </head>
 
   <body>
+
     <section id = 'top'>
-      <h1>My Shopping List</h1>
-      <p>An interactive list-maker</p>
+      <hgroup>
+        <h1>My Shopping List:</h1>
+        <p>[an interactive list-maker]</p>
+      </hgroup>
     </section>
 
-    <section class="container">
-      <section id = 'entries'>
-        <h2>Category & item: </h2> 
+    <section id = 'entry'>
+
+      <section>
         Category: 
         <select> 
           <optgroup label = "Pick a grocery category">
             <option>Beverage</option>
             <option>Bakery</option>
-            <option>Baking</option>
             <option>Dairy</option>
             <option>Frozen</option>
             <option>Household</option>
@@ -41,15 +43,56 @@
           </optgroup>
         </select>
         <br>Specify item: <input>
-        
-        <button id = 'add'>Add item</button>
       </section>
 
-      <section id = 'output'>
-        <h2>My List</h2> 
-        <textarea>testing</textarea>
-        <button>Print to file</button>     
-      </section>
+      <button class = 'add'>Add item</button>
+
     </section>
+
+    <section id = 'result'>
+      <dl class="beverage">
+        <dt>Beverage:</dt>
+        <dd>[empty]</dd>
+      </dl>
+      <dl class="bakery">
+        <dt>Bakery:</dt>
+        <dd>[empty]</dd>
+      </dl>
+      <dl class="pantry">
+        <dt>Pantry:</dt>
+        <dd>[empty]</dd>
+      </dl>
+      <dl class="household">
+        <dt>Household:</dt>
+        <dd>[empty]</dd>
+      </dl>
+      <dl class="personal">
+        <dt>Personal Care:</dt>
+        <dd>[empty]</dd>
+      </dl>
+      <dl class="produce">
+        <dt>Produce:</dt>
+        <dd>[empty]</dd>
+      </dl>
+      <dl class="dairy">
+        <dt>Dairy:</dt>
+        <dd>[empty]</dd>
+      </dl>
+      <dl class="meat">
+        <dt>Meat:</dt>
+        <dd>[empty]</dd>
+      </dl>
+      <dl class="frozen">
+        <dt>Frozen:</dt>
+        <dd>[empty]</dd>
+      </dl>
+      <dl class="other">
+        <dt>Other:</dt>
+        <dd>[empty]</dd>
+      </dl>
+      <br>
+           
+    </section>
+    <button id="print">Print</button>
   </body>
 </html>

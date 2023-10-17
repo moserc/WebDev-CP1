@@ -11,4 +11,60 @@ body {
   font-size: large;
   font-weight: lighter;
   margin: 5%;
+  width: 90%;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+  min-width: fit-content;
+}
+
+hgroup h1 {
+  margin-bottom: 0;
+}
+
+hgroup p {
+  margin:0%
+}
+
+body, #entry, #result {
+  display: flex;
+}
+
+#top, #entry, #result {
+  width: 100%
+}
+
+#entry {
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#entry > section {
+  text-align: right;
+  padding-right: 25px;
+}
+
+#result {
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid rgb(42, 42, 42);
+  margin-bottom: 20px;
+}
+
+dl {
+  padding: 20px;
+  margin-top:0%;
+  text-align: left;
+}
+
+dt {
+  font-weight: bold;
+}
+
+#print {
+  width: 50%;
+  height: 50px;
+  font-size: 100%
 }
