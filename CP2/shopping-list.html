@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+  Name: Cheryl Moser
+  Date: October 16, 2023
+
+  This is the html file for creating a shopping list. When interactivity is added, 
+  the user will be able to add/remove items and write data to a .txt file.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="shopping.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
+    <title>CP2</title>
+  </head>
+
+  <body>
+    <section id = 'top'>
+      <h1>My Shopping List</h1>
+      <p>An interactive list-maker</p>
+    </section>
+
+    <section class="container">
+      <section id = 'entries'>
+        <h2>Category & item: </h2> 
+        Category: 
+        <select> 
+          <optgroup label = "Pick a grocery category">
+            <option>Beverage</option>
+            <option>Bakery</option>
+            <option>Baking</option>
+            <option>Dairy</option>
+            <option>Frozen</option>
+            <option>Household</option>
+            <option>Meat</option>
+            <option>Other</option>
+            <option>Pantry</option>
+            <option>Personal Care</option>
+            <option>Produce</option>
+          </optgroup>
+        </select>
+        <br>Specify item: <input>
+        
+        <button id = 'add'>Add item</button>
+      </section>
+
+      <section id = 'output'>
+        <h2>My List</h2> 
+        <textarea>testing</textarea>
+        <button>Print to file</button>     
+      </section>
+    </section>
+  </body>
+</html>
