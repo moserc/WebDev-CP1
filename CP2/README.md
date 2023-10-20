@@ -1,14 +1,16 @@
 # Welcome! This is my grocery shopping list-maker.<br>
 Instructions for using this list-maker:
-1. Download the CP2 file
-2. Open index.html in your preferred browser
+1. Download and extract the zip file for this repository
+2. Open the CP2 folder and then open index.html in your preferred browser
 3. Choose a desired category from the dropdown menu and specify your item
 4. Press the 'Add item' button
 5. Repeat steps 3-4 until you are satisfied with your list
 6. Double-click any item to remove it, or press the 'Clear All' button to clear the entire list
 7. Print the page from your browser to bring up save/print options
 
-# Creative Project 2 Project Specification
+See below for the AD320 project specs:
+
+## Creative Project 2 Project Specification
 ## External Requirements
 * Your project must include the following three files at a minimum:
   * `index.html` - main page of your website
