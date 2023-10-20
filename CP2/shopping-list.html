@@ -3,8 +3,10 @@
   Name: Cheryl Moser
   Date: October 16, 2023
 
-  This is the html file for creating a shopping list. When interactivity is added, 
-  the user will be able to add/remove items and write data to a .txt file.
+  This is the html file for creating a shopping list.
+  User can add/remove items to their associated categories.
+  Items can be deleted by double-clicking.
+  The finished list can be written to a .txt file for saving or printing.
 -->
 <html lang="en">
   <head>
@@ -28,31 +30,30 @@
 
       <section>
         Category: 
-        <select> 
-          <optgroup label = "Pick a grocery category">
-            <option>Beverage</option>
-            <option>Bakery</option>
-            <option>Dairy</option>
-            <option>Frozen</option>
-            <option>Household</option>
-            <option>Meat</option>
-            <option>Other</option>
-            <option>Pantry</option>
-            <option>Personal Care</option>
-            <option>Produce</option>
-          </optgroup>
+        <select id ="groc" required> 
+          <option value = "">-Please choose a category-</option>>
+          <option class="beverage">Beverage</option>
+          <option class="bakery">Bakery</option>
+          <option class="beverage">Dairy</option>
+          <option class="frozen">Frozen</option>
+          <option class="household">Household</option>
+          <option class="meat">Meat</option>
+          <option class="other">Other</option>
+          <option class="pantry">Pantry</option>
+          <option class="personal">Personal Care</option>
+          <option class="produce">Produce</option>
         </select>
-        <br>Specify item: <input>
+        <br>Specify item: <input id="item">
       </section>
 
-      <button class = 'add'>Add item</button>
+      <button id = 'add'>Add item</button>
 
     </section>
 
     <section id = 'result'>
-      <dl class="beverage">
+      <dl>
         <dt>Beverage:</dt>
-        <ul>
+        <ul id="bev">
         </ul>
       </dl>
       <dl class="bakery">
@@ -101,6 +102,8 @@
         </ul>
       </dl>
     </section>
-    <button id="print">Print</button>
+    
+    <span>Double-click one item to delete it.</span>
+    <span>To clear the entire list, press <button id="clear">Clear All</button></span>
   </body>
 </html>
