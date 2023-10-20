@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+  Name: Cheryl Moser
+  Date: October 20, 2023
+
+  HTML file for creating a shopping list. Has add/clear buttons, a category drop-down menu,
+  an item specification input field, and a 'result' area where items are added by category.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
+    <title>CP2</title>
+  </head>
+
+  <body>
+
+    <section id = 'top'>
+      <hgroup>
+        <h1>My Shopping List:</h1>
+        <p>[an interactive list-maker]</p>
+      </hgroup>
+    </section>
+
+    <section id = 'entry'>
+      <section>
+        <span>Category:
+          <select id ="groc" required> 
+            <option value = "">-Please choose a category-</option>>
+            <option class="beverage">Beverage</option>
+            <option class="bakery">Bakery</option>
+            <option class="beverage">Dairy</option>
+            <option class="frozen">Frozen</option>
+            <option class="household">Household</option>
+            <option class="meat">Meat</option>
+            <option class="other">Other</option>
+            <option class="pantry">Pantry</option>
+            <option class="personal">Personal Care</option>
+            <option class="produce">Produce</option>
+          </select>
+        </span>
+        <br>
+        <span>Specify item: <input id="item"></span>
+      </section>
+
+      <button id = 'add'>Add item</button>
+    </section>
+
+    <section id = 'result'>
+      <dl>
+        <dt>Beverage:</dt>
+        <ul id="beverage">
+        </ul>
+      </dl>
+
+      <dl>
+        <dt>Bakery:</dt>
+        <ul id="bakery">
+        </ul>
+      </dl>
+
+      <dl>
+        <dt>Pantry:</dt>
+        <ul id="pantry">
+        </ul>
+      </dl>
+
+      <dl>
+        <dt>Household:</dt>
+        <ul id="household">
+        </ul>
+      </dl>
+
+      <dl>
+        <dt>Personal Care:</dt>
+        <ul id="personal care">
+        </ul>
+      </dl>
+
+      <dl>
+        <dt>Produce:</dt>
+        <ul id="produce">
+        </ul>
+      </dl>
+
+      <dl>
+        <dt>Dairy:</dt>
+        <ul id="dairy">
+        </ul>
+      </dl>
+
+      <dl>
+        <dt>Meat:</dt>
+        <ul id="meat">
+        </ul>
+      </dl>
+
+      <dl>
+        <dt>Frozen:</dt>
+        <ul id="frozen">
+        </ul>
+      </dl>
+
+      <dl>
+        <dt>Other:</dt>
+        <ul id="other">
+        </ul>
+      </dl>
+    </section>
+    <span id = 'phrase' class = 'dblStyle'>Double-click one item to delete it.</span>
+    <span>To clear the entire list, press <button id="clear">Clear All</button></span>
+    <br><span>When you're happy with your list, simply 'print' this page to save it to your device.</span>
+  </body>
+</html>

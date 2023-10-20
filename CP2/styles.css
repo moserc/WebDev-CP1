@@ -1,6 +1,6 @@
 /*
   Name: Cheryl Moser
-  Date: October 17, 2023
+  Date: October 20, 2023
   CSS style document for the AD320 portfolio. Used by all pages in the 
   'CP2' folder for consistency in look & feel.
 */
@@ -20,12 +20,16 @@ body {
   max-width: fit-content;
 }
 
+body, .toggleStyle {
+  font-weight: lighter;
+}
+
 hgroup h1 {
-  margin-bottom: 0;
+  margin-bottom: 0%;
 }
 
 hgroup p {
-  margin:0%
+  margin:0%;
 }
 
 body, #entry, #result {
@@ -33,13 +37,16 @@ body, #entry, #result {
 }
 
 #top, #entry, #result {
-  width: 100%
+  width: 100%;
 }
 
 #entry {
-  justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+#entry, #result {
+  justify-content: center;
 }
 
 #entry > section {
@@ -48,7 +55,6 @@ body, #entry, #result {
 }
 
 #result {
-  justify-content: center;
   flex-wrap: wrap;
   border: 1px solid rgb(42, 42, 42);
   margin-bottom: 20px;
@@ -60,12 +66,24 @@ dl {
   text-align: left;
 }
 
-dt {
+dt, .dblStyle {
   font-weight: bold;
 }
 
-#print {
+#clear {
   width: 50%;
-  height: 50px;
-  font-size: 100%
+  height: 25px;
+  font-size: 100%;
+}
+
+.dblStyle {
+  color: rgb(4, 75, 141);
+}
+
+.toggleStyle {
+  color: rgb(42, 42, 42);
+}
+
+.btnStyle{
+  background-color: rgb(153, 153, 153);
 }
