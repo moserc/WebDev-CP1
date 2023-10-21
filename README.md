@@ -41,6 +41,3 @@ If you choose to use a second stylesheet, you should use `styles.css` only for s
   * Prefer CSS selectors instead of using too many classes or IDs in your HTML.
   * Do not include unused, duplicate, or overridden CSS rules or rulesets and use shared CSS selectors to factor out redundancy. Make sure to double-check that you didn't leave any unused styles in before submitting!
 
-# Creative Project 2 - upcoming
-# Creative Project 3 - upcoming
-# Creative Project 4 - upcoming
