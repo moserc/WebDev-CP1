@@ -13,9 +13,11 @@ body {
   margin: 5%;
   width: 90%;
   text-align: center;
-  width: max-content;
-  height: max-content;
   display: flex;
+}
+
+hgroup{
+  width: max-content;
 }
 
 hgroup h1 {
@@ -27,11 +29,8 @@ hgroup p {
 }
 
 #result {
-  justify-content: left;
   flex-wrap: wrap;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 50px;
   text-align: left;
 }
 
@@ -41,6 +40,10 @@ hgroup p {
   font-size: larger;
 }
 
-.btnStyle{
-  background-color: rgb(153, 153, 153);
+#activity{
+  font-weight: bold;
+}
+
+#result p {
+  margin: 0%;
 }

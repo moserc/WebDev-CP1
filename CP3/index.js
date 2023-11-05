@@ -1,57 +1,65 @@
 /**
  * Name: Cheryl Moser
- * Date: October 20, 2023
+ * Date: November 4, 2023
  *
- * Adds functionality to shopping-list html file.
- * Adds click-events to 'add' & 'clear all' buttons.
- * Adds double-click event to each added item.
- * Double-clicking on the item will remove it.
+ * Adds functionality to index html file.
+ * Adds click-event to 'btn' button which initiates an API
+ * call to boredapi.com. Returns a random activity suggestion.
  */
 
 "use strict";
 
 (function() {
 
-  const URL = 'http://www.boredapi.com/api/activity';
+  const URL = 'https://www.boredapi.com/api/activity';
 
   window.addEventListener("load", init);
 
-  /**
-   * Adds click functionality to buttons 'Add item' and 'Clear All'.
-   */
+  /**Adds click functionality to button 'btn'.*/
   function init() {
       id('btn').addEventListener('click', request);
   }
 
-  /***/
+  /**Fetches data from the bored api.*/
   function request() {
-    //TODO what happens when the button is clicked
-    //clear();
     console.log('fetching...');
-
     fetch(URL)
       .then(statusCheck)
-      .then(resp => resp.json()) //js obj
+      .then(resp => resp.json()) //returns JSON as a js object
       .then(generateActivity)
       .catch(err);
 
       id("btn").innerHTML = "Press me again!";
+      
       console.log('fetched!');
   }
 
-  function generateActivity(data){
-    console.log(data);
-    let name = data.activity;
-    let people = data.participants;
-    let link = '';
+  /**Uses data returned by fetch to display a random activity
+   * suggestion. Displays three items from the data: activity,
+   * number of participants needed, and a link (if provided).
+   * @param {object} data from API call
+  */
+  function generateActivity(data){    
+    
+    clear();
+    /*append new paragraphs to 'result' section; one each for activity, participants,
+    and a link for more info, if provided*/
+    let name = gen('p');
+    name.id = 'activity';
+    name.innerHTML = data.activity + '!';
+    id('result').appendChild(name);
+
+    let people = gen('p');
+    people.innerHTML = 'Recommended minimum participants: ' + data.participants;
+    id('result').appendChild(people);
+
+    let link = gen('p');
     if (data.link != ''){
-      link = data.link;
-    }else{
-      link = 'No link given.'
+      link.innerHTML = '<br>'+'More info at: ' + data.link;
     }
-    id("result").innerHTML = 'Activity: ' + name + '!' + "<br />" +  
-      'Recommended participants: ' + people + "." + "<br />" + 
-      "More info at: "+ "<br />" + link;
+    id('result').appendChild(link);
+
+    //ADD FOOTER FOR CITATION
   }
 
   /** ------------------------------ Helper Functions  ------------------------------ */
@@ -76,21 +84,12 @@
     return id('result').innerHTML = msg;
   }
 
-  /**
-   * Changes the background color and displays 'Added!' when the 'Add item' button is clicked.
-   * Times-out after 700ms and returns the button to original state.
+  /** 
+   * Clears content from the 'result' tag.
+   * @return {String} empty string
    */
-  function btnToggle(){
-    let btn = id('add');
-    console.log(btn);
-    if(btn.classList = 'null'){
-      btn.innerHTML = "Added!";
-      btn.classList.toggle('btnStyle');
-      setTimeout(function () {
-        btn.classList = 'null'
-        btn.innerHTML = "Add item";
-      }, 700);
-    }
+  function clear(){
+    return id('result').innerHTML = '';
   }
 
   /**
@@ -109,14 +108,5 @@
    */
   function id(idName) {
       return document.getElementById(idName);
-  }
-
-  /**
-   * Returns the array of elements that match the given CSS selector.
-   * @param {string} selector - CSS query selector
-   * @returns {object[]} array of DOM objects matching the query.
-   */
-  function qsa(selector) {
-      return document.querySelectorAll(selector);
   }
 })();
