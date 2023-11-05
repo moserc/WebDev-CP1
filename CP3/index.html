@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--
   Name: Cheryl Moser
-  Date: October 20, 2023
+  Date: November 4, 2023
 
-  HTML file for creating a shopping list. Has add/clear buttons, a category drop-down menu,
-  an item specification input field, and a 'result' area where items are added by category.
+  HTML file for generating a random activity suggestion.
+  Pressing the button initiates an API call to bored.com.
 -->
 
 <html lang="en">
@@ -18,17 +18,20 @@
 
   <body>
 
-    <section id = 'top'>
-      <hgroup>
-        <h1>Random activity generator</h1>
-        <p>Bored and looking for something to do?</p>
-      </hgroup>
-      <br>
-      <button id = 'btn'>Press me!</button>
-      <br>
-    </section>
+    <section id = 'container'>
 
-    <section id = 'result'></section>
+      <section id = 'top'>
+        <hgroup>
+          <h1>Random activity generator</h1>
+          <p>Bored and looking for something to do?</p>
+        </hgroup>
+        <br>
+        <button id = 'btn'>Press me!</button>
+        <br>
+      </section>
 
+      <section id = 'result'></section>
+  </section>
+  <footer>Random activity suggestions courtesy of <a href=www.boredapi.com target="blank">boredapi.com</a></footer>
   </body>
 </html>

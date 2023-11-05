@@ -1,4 +1,4 @@
-/**
+/*
  * Name: Cheryl Moser
  * Date: November 4, 2023
  *
@@ -34,10 +34,10 @@
       console.log('fetched!');
   }
 
-  /**Uses data returned by fetch to display a random activity
+  /**Uses data returned by an API call to display a random activity
    * suggestion. Displays three items from the data: activity,
    * number of participants needed, and a link (if provided).
-   * @param {object} data from API call
+   * @param {object} data data from the API call
   */
   function generateActivity(data){    
     
@@ -58,8 +58,6 @@
       link.innerHTML = '<br>'+'More info at: ' + data.link;
     }
     id('result').appendChild(link);
-
-    //ADD FOOTER FOR CITATION
   }
 
   /** ------------------------------ Helper Functions  ------------------------------ */
@@ -67,7 +65,7 @@
   /**
    * Called to return a successful or rejection response from the web service.
    * @param {object} res - response
-   * @return {object} - successful or rejection response
+   * @return {object} - a successful or rejection response
    */
     async function statusCheck(res) {
       if (!res.ok) {
@@ -77,7 +75,7 @@
     }
 
   /** Error handling for failed status check.
-   * @returns {String} error message
+   * @returns {String} an error message
    */
   function err() {
     let msg = 'Something went wrong. No activities here.';
@@ -86,7 +84,7 @@
 
   /** 
    * Clears content from the 'result' tag.
-   * @return {String} empty string
+   * @returns {String} an empty string
    */
   function clear(){
     return id('result').innerHTML = '';
